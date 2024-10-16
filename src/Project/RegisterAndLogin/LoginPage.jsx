@@ -1,105 +1,45 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { Formik, Form, Field } from 'formik';
 
 
 function LoginPage() {
   return (
-    <div style={styles.container}>
-      <div style={styles.formContainer}>
-        <h2 style={styles.title}>Login</h2>
-        <form>
-          <div style={styles.inputGroup}>
-            <label style={styles.label}>Username</label>
+    <div  className="flex justify-center items-center min-h-screen bg-cover bg-center"
+    style={{ backgroundImage: 'url("https://i.pinimg.com/originals/e6/16/50/e61650efc5d6acff4c558aab0830d07a.jpg")' }}>
+      <div className="bg-black bg-opacity-70 p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h2 className="text-white text-2xl font-bold mb-6 text-center">Login</h2>
+        <Formik>
+        {()=>(
+          <Form>
+          <div className="mb-4">
+            <label className="block text-white mb-1">Username</label>
             <input
              type="text"
              name='username'
-             style={styles.input} 
+             className="w-full p-3 border border-gray-300 rounded-md bg-white" 
              />
           </div>
-          <div style={styles.inputGroup}>
-            <label style={styles.label}>Password</label>
+          <div className="mb-4">
+            <label className="block text-white mb-1">Password</label>
             <input type="password" 
             name='password'
-            style={styles.input}
+            className="w-full p-3 border border-gray-300 rounded-md bg-white" 
             />
           </div>
-          <button type='submit' style={styles.button}  onMouseEnter={handleMouseEnter} 
-  onMouseLeave={handleMouseLeave}>Login</button>
-          <p style={styles.link}>
-            Dont't have an account? <Link to='/'>Register</Link>
+          <button type='submit' className="w-full py-3 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition duration-300" >Login</button>
+          <p  className="text-white text-center mt-4">
+            Dont't have an account? <Link to='/'  className="text-blue-400 underline">Register</Link>
           </p>
-        </form>
+        </Form>
+        )}
+        </Formik>
       </div>
     </div>
   )
 }
 
-const styles = {
-  container: {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '100vh',
-    background: 'url("https://i.pinimg.com/originals/e6/16/50/e61650efc5d6acff4c558aab0830d07a.jpg") no-repeat center ',
-    backgroundSize: 'cover', 
-  },
-  formContainer: {
-    backgroundColor: 'rgba(0, 0, 0, 0.7)',
-    padding: '40px',
-    borderRadius: '10px',
-    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.5)',
-    width: '320px',
-  },
-  title: {
-    textAlign: 'center',
-    color:'white',
-    marginBottom:'20px',
-    fontWeight:'bold',
-  },
-  inputGroup: {
-    marginBottom: '20px',
-  },
-  input: {
-    width: '100%',
-    padding: '12px',
-    borderRadius: '5px',
-    border: '1px solid #ccc',
-    backgroundColor: 'rgba(255, 255, 255, 0.9)', 
-    color: '#333',
-    fontSize: '16px',
-  },
-  button: {
-    width: '100%',
-    padding: '12px',
-    backgroundColor: '#6a11cb',
-    color: 'white',
-    border: 'none',
-    borderRadius: '25px',
-    cursor: 'pointer',
-    fontSize: '16px',
-    transition: 'background-color 0.3s',  
-  },
-  link: {
-    textAlign: 'center',
-    color: 'white',
-    marginTop: '15px', 
-  },
-  label:{
-    color: 'white', 
-    marginBottom: '5px',
-    display: 'block', 
-  },
-  buttonHover: {
-    backgroundColor: '#5a0db2', 
-  },
-};
 
-const handleMouseEnter = (e) => {
-  e.target.style.backgroundColor = '#5a0db2';
-};
-
-const handleMouseLeave = (e) => {
-  e.target.style.backgroundColor = '#6a11cb';
-};
 
 export default LoginPage
+
