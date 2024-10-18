@@ -1,18 +1,559 @@
 {
   "users": [
     {
-      "id": "1",
-      "firstname": "John",
-      "lastname": "Doe",
-      "email": "john@example.com"
-    },
-    {
       "id": "9a91",
       "firstname": "mohamad",
       "lastname": "nifras",
       "email": "mohamadnifras@gmail.com",
       "password": "nifras"
+    },
+    {
+      "id": "252c",
+      "firstname": "suhail",
+      "lastname": "m",
+      "email": "suhail@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "3980",
+      "firstname": "minhaj",
+      "lastname": "k",
+      "email": "minhaj@gmail.com",
+      "password": "12345678"
     }
-  
+  ],
+
+  "products":[
+    {
+      "id": 1,
+      "category": "men",
+      "image": "/shoes/images/shoe1.avif",
+      "brand": "Nike",
+      "price": 1999,
+      "offer": "30%",
+      "size": 9,
+      "stock": 100
+    },
+    {
+      "id": 2,
+      "category": "men",
+      "image": "/shoes/images/shoe2.avif",
+      "brand": "Adidas",
+      "price": 2499,
+      "offer": "20%",
+      "size": 10,
+      "stock": 50
+    },
+    {
+      "id": 3,
+      "category": "men",
+      "image": "/shoes/images/shoe3.avif",
+      "brand": "Nike",
+      "price": 2999,
+      "offer": "25%",
+      "size": 11,
+      "stock": 75
+    },
+    {
+      "id": 4,
+      "category": "men",
+      "image": "/shoes/images/shoe4.avif",
+      "brand": "Adidas",
+      "price": 2699,
+      "offer": "15%",
+      "size": 10,
+      "stock": 60
+    },
+    {
+      "id": 5,
+      "category": "men",
+      "image": "/shoes/images/shoe5.avif",
+      "brand": "Nike",
+      "price": 2300,
+      "offer": "20%",
+      "size": 9,
+      "stock": 90
+    },
+    {
+      "id": 6,
+      "category": "men",
+      "image": "/shoes/images/shoe6.avif",
+      "brand": "Adidas",
+      "price": 4500,
+      "offer": "25%",
+      "size": 11,
+      "stock": 45
+    },
+    {
+      "id": 7,
+      "category": "men",
+      "image": "/shoes/images/shoe7.avif",
+      "brand": "Nike",
+      "price": 3100,
+      "offer": "30%",
+      "size": 10,
+      "stock": 55
+    },
+    {
+      "id": 8,
+      "category": "men",
+      "image": "/shoes/images/shoe8.avif",
+      "brand": "Adidas",
+      "price": 2700,
+      "offer": "35%",
+      "size": 9,
+      "stock": 40
+    },
+    {
+      "id": 9,
+      "category": "men",
+      "image": "/shoes/images/shoe9.avif",
+      "brand": "Nike",
+      "price": 3300,
+      "offer": "40%",
+      "size": 11,
+      "stock": 30
+    },
+    {
+      "id": 10,
+      "category": "men",
+      "image": "/shoes/images/shoe10.avif",
+      "brand": "Adidas",
+      "price": 4000,
+      "offer": "10%",
+      "size": 12,
+      "stock": 20
+    },
+    {
+      "id": 11,
+      "category": "men",
+      "image": "/shoes/images/shoe11.png",
+      "brand": "Nike",
+      "price": 2500,
+      "offer": "15%",
+      "size": 10,
+      "stock": 75
+    },
+    {
+      "id": 12,
+      "category": "men",
+      "image": "/shoes/images/shoe12.png",
+      "brand": "Adidas",
+      "price": 3000,
+      "offer": "20%",
+      "size": 11,
+      "stock": 40
+    },
+    {
+      "id": 13,
+      "category": "men",
+      "image": "/shoes/images/shoe13.png",
+      "brand": "Nike",
+      "price": 1999,
+      "offer": "25%",
+      "size": 9,
+      "stock": 60
+    },
+    {
+      "id": 14,
+      "category": "men",
+      "image": "/shoes/images/shoe14.png",
+      "brand": "Adidas",
+      "price": 3500,
+      "offer": "30%",
+      "size": 10,
+      "stock": 70
+    },
+    {
+      "id": 15,
+      "category": "men",
+      "image": "/shoes/images/shoe15.png",
+      "brand": "Nike",
+      "price": 2900,
+      "offer": "20%",
+      "size": 10,
+      "stock": 50
+    },
+    {
+      "id": 16,
+      "category": "men",
+      "image": "/shoes/images/shoe16.png",
+      "brand": "Adidas",
+      "price": 3100,
+      "offer": "10%",
+      "size": 11,
+      "stock": 55
+    },
+    {
+      "id": 17,
+      "category": "men",
+      "image": "/shoes/images/shoe17.png",
+      "brand": "Nike",
+      "price": 2700,
+      "offer": "35%",
+      "size": 9,
+      "stock": 40
+    },
+    {
+      "id": 18,
+      "category": "men",
+      "image": "/shoes/images/shoe18.png",
+      "brand": "Adidas",
+      "price": 4200,
+      "offer": "25%",
+      "size": 12,
+      "stock": 25
+    },
+    {
+      "id": 19,
+      "category": "men",
+      "image": "/shoes/images/shoe19.png",
+      "brand": "Nike",
+      "price": 3300,
+      "offer": "30%",
+      "size": 10,
+      "stock": 55
+    },
+    {
+      "id": 20,
+      "category": "men",
+      "image": "/shoes/images/shoe20.png",
+      "brand": "Adidas",
+      "price": 2900,
+      "offer": "40%",
+      "size": 9,
+      "stock": 35
+    },
+    {
+      "id": 21,
+      "name": "Running Shoe",
+      "category": "women",
+      "image": "/shoes/images/shoe21.webp",
+      "brand": "Nike",
+      "price": 2999,
+      "offer": "30%",
+      "size": 8,
+      "stock": 50
+    },
+    {
+      "id": 22,
+      "name": "Casual Shoe",
+      "category": "women",
+      "image": "/shoes/images/shoe22.webp",
+      "brand": "Adidas",
+      "price": 2800,
+      "offer": "25%",
+      "size": 9,
+      "stock": 30
+    },
+    {
+      "id": 23,
+      "name": "Sneakers",
+      "category": "women",
+      "image": "/shoes/images/shoe21.avif",
+      "brand": "Puma",
+      "price": 2700,
+      "offer": "20%",
+      "size": 7,
+      "stock": 40
+    },
+    {
+      "id": 24,
+      "name": "Sports Shoe",
+      "category": "women",
+      "image": "/shoes/images/shoe24.webp",
+      "brand": "Reebok",
+      "price": 2999,
+      "offer": "35%",
+      "size": 8,
+      "stock": 60
+    },
+    {
+      "id": 25,
+      "name": "Heels",
+      "category": "women",
+      "image": "/shoes/images/shoe25.webp",
+      "brand": "Clarks",
+      "price": 2600,
+      "offer": "10%",
+      "size": 9,
+      "stock": 25
+    },
+    {
+      "id": 26,
+      "name": "Running Shoe",
+      "category": "women",
+      "image": "/shoes/images/shoe26.jpg",
+      "brand": "Under Armour",
+      "price": 2900,
+      "offer": "15%",
+      "size": 10,
+      "stock": 40
+    },
+    {
+      "id": 27,
+      "name": "Flats",
+      "category": "women",
+      "image": "/shoes/images/shoe27.jpg",
+      "brand": "Aldo",
+      "price": 2200,
+      "offer": "20%",
+      "size": 8,
+      "stock": 55
+    },
+    {
+      "id": 28,
+      "name": "Boots",
+      "category": "women",
+      "image": "/shoes/images/shoe28.jpg",
+      "brand": "Timberland",
+      "price": 2999,
+      "offer": "25%",
+      "size": 9,
+      "stock": 20
+    },
+    {
+      "id": 29,
+      "name": "Sandals",
+      "category": "women",
+      "image": "/shoes/images/shoe29.jpg",
+      "brand": "Hush Puppies",
+      "price": 1800,
+      "offer": "10%",
+      "size": 7,
+      "stock": 90
+    },
+    {
+      "id": 30,
+      "name": "Slip-On",
+      "category": "women",
+      "image": "/shoes/images/shoe30.webp",
+      "brand": "Crocs",
+      "price": 1900,
+      "offer": "20%",
+      "size": 6,
+      "stock": 70
+    },
+    {
+      "id": 31,
+      "name": "Sports Sneakers",
+      "category": "women",
+      "image": "/shoes/images/shoe31.webp",
+      "brand": "Nike",
+      "price": 2999,
+      "offer": "30%",
+      "size": 8,
+      "stock": 45
+    },
+    {
+      "id": 32,
+      "name": "Running Shoe",
+      "category": "women",
+      "image": "/shoes/images/shoe32.webp",
+      "brand": "Adidas",
+      "price": 2700,
+      "offer": "25%",
+      "size": 9,
+      "stock": 40
+    },
+    {
+      "id": 33,
+      "name": "Casual Flats",
+      "category": "women",
+      "image": "/shoes/images/shoe33.webp",
+      "brand": "Puma",
+      "price": 2500,
+      "offer": "20%",
+      "size": 7,
+      "stock": 35
+    },
+    {
+      "id": 34,
+      "name": "Sandals",
+      "category": "women",
+      "image": "/shoes/images/shoe34.webp",
+      "brand": "Reebok",
+      "price": 2200,
+      "offer": "35%",
+      "size": 8,
+      "stock": 60
+    },
+    {
+      "id": 35,
+      "name": "Heels",
+      "category": "women",
+      "image": "/shoes/images/shoe35.webp",
+      "brand": "Clarks",
+      "price": 2700,
+      "offer": "10%",
+      "size": 9,
+      "stock": 20
+    },
+    {
+      "id": 36,
+      "name": "Lifestyle Shoe",
+      "category": "women",
+      "image": "/shoes/images/shoe36.webp",
+      "brand": "Nike",
+      "price": 2800,
+      "offer": "15%",
+      "size": 10,
+      "stock": 55
+    },
+    {
+      "id": 37,
+      "name": "Running Shoe",
+      "category": "women",
+      "image": "/shoes/images/shoe37.webp",
+      "brand": "Adidas",
+      "price": 2999,
+      "offer": "30%",
+      "size": 8,
+      "stock": 45
+    },
+    {
+      "id": 38,
+      "name": "Flats",
+      "category": "women",
+      "image": "/shoes/images/shoe38.webp",
+      "brand": "Aldo",
+      "price": 1900,
+      "offer": "20%",
+      "size": 7,
+      "stock": 35
+    },
+    {
+      "id": 39,
+      "name": "Boots",
+      "category": "women",
+      "image": "/shoes/images/shoe39.jpg",
+      "brand": "Timberland",
+      "price": 2999,
+      "offer": "25%",
+      "size": 9,
+      "stock": 25
+    },
+    {
+      "id": 40,
+      "name": "Sneakers",
+      "category": "women",
+      "image": "/shoes/images/shoe40.jpg",
+      "brand": "Hush Puppies",
+      "price": 2500,
+      "offer": "20%",
+      "size": 8,
+      "stock": 50
+    },
+    {
+      "id": 41,
+      "name": "Adidas Kids Sneaker",
+      "category": "kids",
+      "image": "/shoes/images/shoe41.webp",
+      "brand": "Adidas",
+      "price": 2500,
+      "offer": "20%",
+      "size": 8,
+      "stock": 50
+    },
+    {
+      "id": 42,
+      "name": "Nike Baby Runner",
+      "category": "kids",
+      "image": "/shoes/images/shoe42.webp",
+      "brand": "Nike",
+      "price": 2200,
+      "offer": "25%",
+      "size": 7,
+      "stock": 40
+    },
+    {
+      "id": 43,
+      "name": "Puma Little Explorer",
+      "category": "kids",
+      "image": "/shoes/images/shoe43.webp",
+      "brand": "Puma",
+      "price": 2400,
+      "offer": "30%",
+      "size": 9,
+      "stock": 35
+    },
+    {
+      "id": 44,
+      "name": "Reebok Classic Kids",
+      "category": "kids",
+      "image": "/shoes/images/shoe44.webp",
+      "brand": "Reebok",
+      "price": 2100,
+      "offer": "15%",
+      "size": 6,
+      "stock": 60
+    },
+    {
+      "id": 45,
+      "name": "Clarks Comfy Step",
+      "category": "kids",
+      "image": "/shoes/images/shoe45.webp",
+      "brand": "Clarks",
+      "price": 2300,
+      "offer": "20%",
+      "size": 8,
+      "stock": 45
+    },
+    {
+      "id": 46,
+      "name": "Timberland Adventure Boot",
+      "category": "kids",
+      "image": "/shoes/images/shoe46.jpg",
+      "brand": "Timberland",
+      "price": 2700,
+      "offer": "25%",
+      "size": 9,
+      "stock": 30
+    },
+    {
+      "id": 47,
+      "name": "Hush Puppies Playtime",
+      "category": "kids",
+      "image": "/shoes/images/shoe47.jpg",
+      "brand": "Hush Puppies",
+      "price": 2000,
+      "offer": "10%",
+      "size": 7,
+      "stock": 70
+    },
+    {
+      "id": 48,
+      "name": "Crocs Sunshine Clog",
+      "category": "kids",
+      "image": "/shoes/images/shoe48.jpg",
+      "brand": "Crocs",
+      "price": 1800,
+      "offer": "15%",
+      "size": 6,
+      "stock": 90
+    },
+    {
+      "id": 49,
+      "name": "Under Armour Swift Shoe",
+      "category": "kids",
+      "image": "/shoes/images/shoe49.jpg",
+      "brand": "Under Armour",
+      "price": 2600,
+      "offer": "20%",
+      "size": 8,
+      "stock": 35
+    },
+    {
+      "id": 50,
+      "name": "Aldo Cool Kids Shoe",
+      "category": "kids",
+      "image": "/shoes/images/shoe50.jpg",
+      "brand": "Aldo",
+      "price": 2400,
+      "offer": "25%",
+      "size": 7,
+      "stock": 55
+    }
+    
   ]
 }

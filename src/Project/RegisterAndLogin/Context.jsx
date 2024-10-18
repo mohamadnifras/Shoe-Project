@@ -31,12 +31,21 @@ function Context({children}) {
   const loginRegister = async (email, password)=>{
   try{
     const newLogin = await axios.get(`http://localhost:5000/users?email=${email}&password=${password}`)
-    return newLogin
+    console.log(newLogin);
+    if(newLogin.data.length>0){
+      const id = newLogin.data[0].id;
+      console.log("User ID:", id);
+    return id ;
+    }
+    return null ;
   }catch(error){
     console.log(error);
+    return null ;
     
   }
-  }
+  };
+
+  
   return (
     <passContext.Provider value={{userRegister,addRegister,loginRegister}}>
       {children}

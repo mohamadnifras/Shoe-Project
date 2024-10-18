@@ -16,14 +16,16 @@ function LoginPage() {
    
   try{
     const {email,password}=values
-    const loginRespone = await loginRegister(email,password)
-    console.log(loginRespone)
-    if(loginRespone.data.length > 0){
+    const id = await loginRegister(email,password);
+    // console.log('Login ID:', id);
+    if(id){
+      localStorage.setItem("id",id);
+      localStorage.setItem("email", email);
       navigate('/home')
     }else{
 
-      alert(" wertyu")
-      console.log("else is working");
+      alert("Please Registration");
+      // console.log("else is working");
     }
   }catch(error){
     console.error(error);
